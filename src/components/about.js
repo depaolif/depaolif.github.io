@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/about.css'
+import '../css/about.scss'
 import { Grid, Row, Col } from 'react-bootstrap';
 
 class About extends React.Component {
@@ -28,7 +28,7 @@ class About extends React.Component {
             <p className="s-header">Personal</p>
             <ul className="s-items">
               <li><a className="s-link" href="mailto:frederico.de.paoli@gmail.com">Email</a></li>
-              <li><a className="s-link" href="./De Paoli - Resume w icons.pdf">Resume</a></li>
+              <li><a className="s-link" target="_blank" href="De Paoli - Resume w icons.pdf">Resume</a></li>
             </ul>
           </Col>
         </Row>
