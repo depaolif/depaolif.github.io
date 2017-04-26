@@ -1,13 +1,25 @@
 #about {
+  border: 0.25em double black;
+  padding: 15px 15px 10px 15px;
   width: 50%;
   margin: auto;
-  margin-top: 35%;
+  margin-top: 30%;
+  text-align: center;
+}
+
+.links-row {
+  border-top: 0.25em double black;
+  padding-top: 1em;
+}
+
+.s-items {
   text-align: left;
 }
 
 .s-link, .s-link:visited, .s-link:active {
   text-decoration: none;
   color: rgb(45, 0, 156);
+  text-align: left;
 }
 
 .s-link:hover {
