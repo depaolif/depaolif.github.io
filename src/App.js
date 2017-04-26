@@ -12,11 +12,11 @@ class App extends Component {
       <HashRouter>
         <Grid>
           <Row>
-            <Col md={4} >
-              <NavBar />
+            <Col md={4}>
+              <Route path='/' component={NavBar} />
             </Col>
-            <Col md={8} >
-              <About />
+            <Col md={8}>
+              <Route path='/about' component={About} />
             </Col>
           </Row>
         </Grid>
