@@ -1,0 +1,16 @@
+#about {
+  width: 50%;
+  margin:0 auto;
+  margin-top: 35%;
+  text-align:left;
+}
+
+.s-link, .s-link:visited, .s-link:active {
+  text-decoration: none;
+  color: rgb(45, 0, 156);
+}
+
+.s-link:hover {
+  text-decoration: underline;
+  color: rgb(45, 0, 156);
+}
