@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import NavBar from './components/navbar'
 import About from './components/about'
 import { Grid, Row, Col } from 'react-bootstrap';
-import { HashRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import './App.css'
 
 

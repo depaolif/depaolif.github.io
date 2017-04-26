@@ -3,3 +3,4 @@ To do:
 2. Make selected Route a different color in the navbar
 3. Add modal for Projects hover
 4. Blog should just link to the blog
+5. Add codepen / clean up code pen
