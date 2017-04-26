@@ -1,12 +1,11 @@
 import React from 'react'
-import muiThemeable from 'material-ui/styles/muiThemeable';
 import '../css/navbar.css'
 
-class MainPage extends React.Component {
+class NavBar extends React.Component {
   render() {
     return (
       <div className="navbar">
-        <h1 id="title">Frederico<br></br>De Paoli</h1>
+        <a id="title" href="#">Frederico<br></br>De Paoli</a>
         <div className="navlink-box">
           <h3 className="navlink">Projects</h3>
           <h3 className="navlink">About</h3>
@@ -17,4 +16,4 @@ class MainPage extends React.Component {
   }
 }
 
-export default muiThemeable()(MainPage);
+export default NavBar

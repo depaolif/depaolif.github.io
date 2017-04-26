@@ -2,6 +2,7 @@
   width: 20%;
   height: 100%;
   margin-left: 5%;
+  margin-top: 10em;
 }
 
 .navlink-box {
@@ -16,7 +17,8 @@
 }
 
 #title {
+  color: black;
   font-size: 40px;
-  margin-top: 3em;
   font-family: 'Rakkas', cursive;
+  text-decoration: none;
 }
