@@ -8,7 +8,7 @@ class About extends React.Component {
       <Grid id="about">
         <Row>
           <div className="about-row">
-            <p>Former paralegal/neuroscience researcher turned full-stack web developer. </p>
+            <p>Former paralegal/neuroscience researcher turned full stack web developer. </p>
             <p>To do: </p>
               <ol>
                 <li>Continue learning as a developer</li>

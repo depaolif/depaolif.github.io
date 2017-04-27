@@ -1,4 +1,4 @@
-[
+const ProjectData = [
   {
     "title": "DoodleDocs",
     "description": "Responsive online drawing platform. Mimics a sketching program using HTML Canvas and custom methods that track mouse movements. Sketches' entire histories are saved.",
@@ -21,3 +21,5 @@
     "github-link": "https://github.com/depaolif/check-up-on"
   }
 ]
+
+export default ProjectData
