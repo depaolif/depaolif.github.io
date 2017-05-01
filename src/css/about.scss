@@ -22,14 +22,3 @@
 .s-items {
   text-align: left;
 }
-
-.s-link, .s-link:link, .s-link:visited, .s-link:active {
-  text-decoration: none;
-  text-align: left;
-  color: $maincolor1;
-}
-
-.s-link:hover {
-  text-decoration: underline;
-  color: $maincolor1;
-}

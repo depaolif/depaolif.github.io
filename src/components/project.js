@@ -6,9 +6,10 @@ class Project extends React.Component {
     const { title, description, languages, externalApis, githubLink } = this.props
     return (
       <div className="project-box">
-        <h3><a href={githubLink} target="_blank">{title}</a></h3>
-        <p>{description}</p>
-        <p>Languages Used: {languages.join(' ')}</p>
+        <h3><a className="p-link" href={githubLink} target="_blank">{title}</a></h3>
+        <br></br>
+        <p className="description">{description}</p>
+        <p className="languages">Languages Used: {languages.join(', ')}</p>
       </div>
     )
   }

@@ -1,1 +1,12 @@
 $maincolor1: purple;
+
+.p-link, .p-link:link, .p-link:visited, .p-link:active {
+  text-decoration: none;
+  text-align: left;
+  color: $maincolor1;
+}
+
+.p-link:hover {
+  border-bottom: 1px dashed $maincolor1;
+  color: $maincolor1;
+}

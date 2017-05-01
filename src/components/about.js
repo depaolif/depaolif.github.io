@@ -22,16 +22,16 @@ class About extends React.Component {
             <Col md={6}>
               <p className="s-header">Social</p>
               <ul className="s-items">
-                <li><a className="s-link" href="https://www.linkedin.com/in/frederico-de-paoli/">LinkedIn</a></li>
-                <li><a className="s-link" href="https://github.com/depaolif">Github</a></li>
-                <li><a className="s-link" href="https://medium.com/@frederico.de.paoli/">Blog</a></li>
+                <li><a className="p-link" href="https://www.linkedin.com/in/frederico-de-paoli/">LinkedIn</a></li>
+                <li><a className="p-link" href="https://github.com/depaolif">Github</a></li>
+                <li><a className="p-link" href="https://medium.com/@frederico.de.paoli/">Blog</a></li>
               </ul>
             </Col>
             <Col md={6}>
               <p className="s-header">Personal</p>
               <ul className="s-items">
-                <li><a className="s-link" href="mailto:frederico.de.paoli@gmail.com">Email</a></li>
-                <li><a className="s-link" target="_blank" href="De Paoli - Resume w icons.pdf">Resume</a></li>
+                <li><a className="p-link" href="mailto:frederico.de.paoli@gmail.com">Email</a></li>
+                <li><a className="p-link" target="_blank" href="De Paoli - Resume w icons.pdf">Resume</a></li>
               </ul>
             </Col>
           </div>
