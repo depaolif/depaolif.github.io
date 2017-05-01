@@ -7,7 +7,14 @@ import '../css/projects_list.scss'
 class ProjectsList extends React.Component {
   render() {
     // calculating what the projects grid will look like
-    const projectsList = ProjectData.map((el, i) => <Project key={i} title={ProjectData[i]["title"]}/> )
+    const projectsList = ProjectData.map((el, i) => <Project key={i}
+      title={ProjectData[i]["title"]}
+      description={ProjectData[i]["description"]}
+      languages={ProjectData[i]["languages"]}
+      externalApis={ProjectData[i]["external apis"]}
+      githubLink={ProjectData[i]["github link"]}
+    /> )
+
     const numberRows = Math.ceil(projectsList.length / 2)
     let projectsGrid = []
     let projectOnLeft, projectOnRight
