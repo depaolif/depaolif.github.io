@@ -11,8 +11,8 @@ class ProjectsList extends React.Component {
       title={ProjectData[i]["title"]}
       description={ProjectData[i]["description"]}
       languages={ProjectData[i]["languages"]}
-      externalApis={ProjectData[i]["external apis"]}
-      githubLink={ProjectData[i]["github link"]}
+      externalApis={ProjectData[i]["externalApis"]}
+      githubLink={ProjectData[i]["githubLink"]}
     /> )
 
     const numberRows = Math.ceil(projectsList.length / 2)
