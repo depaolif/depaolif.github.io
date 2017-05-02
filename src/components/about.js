@@ -31,7 +31,7 @@ class About extends React.Component {
               <p className="s-header">Personal</p>
               <ul className="s-items">
                 <li><a className="p-link" href="mailto:frederico.de.paoli@gmail.com">Email</a></li>
-                <li><a className="p-link" target="_blank" href="De Paoli - Resume w icons.pdf">Resume</a></li>
+                <li><a className="p-link" target="_blank" href="/De Paoli - Resume w icons.pdf">Resume</a></li>
               </ul>
             </Col>
           </div>

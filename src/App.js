@@ -22,6 +22,8 @@ class App extends Component {
               <Route path='/about' component={About} />
               <Route exact path='/projects' component={ProjectsList} />
               <Route path='/projects/doodledocs' component={() => (<FullProject project={ProjectData[0]} />)}/>
+              <Route path='/projects/koko' component={() => (<FullProject project={ProjectData[1]} />)}/>
+              <Route path='/projects/checkupon' component={() => (<FullProject project={ProjectData[2]} />)}/>
             </Col>
           </Row>
         </Grid>
