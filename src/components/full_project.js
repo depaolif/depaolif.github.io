@@ -4,23 +4,27 @@ import '../css/full_project.scss'
 
 class FullProject extends React.Component {
   render() {
-    const { title, description, languages, externalApis, githubLink } = this.props.project
-    const videoInfo = getVideos(title)
-    // const videoElements = videoInfo.map((video, i) => {
-    //   return (
-    //   )
-    // })
+    const { title, description, githubLink } = this.props.project
+    const videos = getVideos(title)
+    const videoElements = videos.map((video, i) => {
+      return (
+        <div className="video-box">
+          <video className="video" src={`/doodledocs/${video["name"]}`} controls="controls" height="400" width="600">
+            Sorry, your browser does not support .mov videos
+          </video>
+          <p className="video-caption">{video["caption"]}</p>
+        </div>
+      )
+    })
 
     return (
-      <div className="project-box">
-        <h2><a className="p-link" href={githubLink} target="_blank">{title}</a></h2>
+      <div className="full-project">
+        <h2>{title}</h2>
         <br></br>
         <p className="description">{description}</p>
-        <h3>Videos</h3>
-        <video src="/doodledocs/drawing.mov" controls="controls" height="400" width="600">
-          Sorry, your browser does not support .mov videos
-        </video>
-        <p className="languages">Languages Used: {languages.join(', ')}</p>
+        <br></br>
+        <h3 className="videos-header">Videos</h3>
+        {videoElements}
       </div>
     )
   }

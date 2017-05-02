@@ -1,0 +1,36 @@
+@import 'variables';
+
+.full-project {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+
+  h2 {
+    color: $maincolor1;
+    text-align: center;
+  }
+
+  .videos-header {
+    text-align: center;
+  }
+
+  .video-box {
+    margin: auto;
+    margin-top: 3em;
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+  }
+
+  .video {
+    margin: auto;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .video-caption {
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+}
