@@ -20,7 +20,10 @@ class FullProject extends React.Component {
     return (
       <div className="full-project">
         <h2>{title}</h2>
-        <br></br>
+        <div className="github-logo-wrapper">
+          <a href={githubLink} target="_blank"><img className="github-logo" src="/github-logo.png" alt="github logo"></img></a>
+        </div>
+        <br></br><br></br>
         <p className="description">{description}</p>
         <br></br>
         <h3 className="videos-header">Videos</h3>

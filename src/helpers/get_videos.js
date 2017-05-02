@@ -14,5 +14,7 @@ export function getVideos(title) {
           caption:"Users can look at Latest Doodles to see what people have been drawing. From here, they can click on a doodle to edit it, adding or undoing things as they see fit, and saving it for themselves. This does not change the original doodle whatsoever, but rather saves a new copy for the user."
         },
       ]
+    default:
+      return []
   }
 }

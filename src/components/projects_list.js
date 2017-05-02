@@ -9,7 +9,7 @@ class ProjectsList extends React.Component {
     // calculating what the projects grid will look like
     const projectsList = ProjectData.map((el, i) => <Project key={i}
       title={ProjectData[i]["title"]}
-      description={ProjectData[i]["description"]}
+      summary={ProjectData[i]["summary"]}
       languages={ProjectData[i]["languages"]}
       externalApis={ProjectData[i]["externalApis"]}
       githubLink={ProjectData[i]["githubLink"]}
@@ -21,9 +21,9 @@ class ProjectsList extends React.Component {
     for (let i = 0; i < numberRows; i++) {
       projectOnLeft = projectsList[i * 2]
       projectOnRight = projectsList[i * 2 + 1]
-      projectsGrid[i] = <Row>
-        <Col md={6}>{projectOnLeft}</Col>
-        <Col md={6}>{projectOnRight}</Col>
+      projectsGrid[i] = <Row key={i}>
+        <Col key={i + 'L'} md={6}>{projectOnLeft}</Col>
+        <Col key={i + 'R'} md={6}>{projectOnRight}</Col>
       </Row>
     }
     return (
