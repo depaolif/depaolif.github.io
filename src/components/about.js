@@ -9,12 +9,8 @@ class About extends React.Component {
         <Row>
           <div className="about-row">
             <p>Former paralegal/neuroscience researcher turned full stack web developer. </p>
-            <p>To do: </p>
-              <ol>
-                <li>Continue learning as a developer</li>
-                <li>Work on projects I'm passionate about</li>
-                <li>Explore the creative potential of programming</li>
-            </ol>
+            <p>Languages: Ruby, SQL, JavaScript, HTML, CSS <br></br>
+            Libraries/Frameworks: Rails, Sinatra, ActiveRecord, jQuery, React, Redux </p>
           </div>
         </Row>
         <Row>
