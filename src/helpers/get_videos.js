@@ -14,6 +14,21 @@ export function getVideos(title) {
           caption:"Users can look at Latest Doodles to see what people have been drawing. From here, they can click on a doodle to edit it, adding or undoing things as they see fit, and saving it for themselves. This does not change the original doodle whatsoever, but rather saves a new copy for the user."
         },
       ]
+    case "koko":
+      return [
+        {
+          name: "trending.mov",
+          caption: "The splash page shows reviews written by the top influencers on the site, users who have consistently highly rated reviews. Trending artists and trending songs shows recent artists and songs, respectively, who have recently received highly-rated reviews that gave high scores (4/5 stars). Any song can be played through Spotify by clicking on the embedded web player."
+        },
+        {
+          name: "registrations.mov",
+          caption: "Users can sign up to join Koko. They can then update their profile, add friends, and look at other users' reviews. The home page is also updated to show users' friends' recent activity."
+        },
+        {
+          name: "reviews.mov",
+          caption: "Users can search for songs using the Spotify API. They can then write and edit reviews for those songs, and downvote or upvote others' reviews."
+        },
+      ]
     default:
       return []
   }
