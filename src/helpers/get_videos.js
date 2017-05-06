@@ -29,6 +29,13 @@ export function getVideos(title) {
           caption: "Users can search for songs using the Spotify API. They can then write and edit reviews for those songs, and downvote or upvote others' reviews."
         },
       ]
+    case "checkupon":
+      return [
+        {
+          name: "app.mov",
+          caption: "Use the search bar to look for a twitter user. What's displayed is a short summary of how that person is doing, along with detailed information about their sentiment and magnitude. Hover over the labels to learn more about the scoring. The Twitter portrait links directly to the user's Twitter profile."
+        }
+      ]
     default:
       return []
   }
