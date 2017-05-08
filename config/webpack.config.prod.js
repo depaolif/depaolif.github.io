@@ -92,7 +92,7 @@ module.exports = {
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
-        loader: 'eslint',
+        use: 'eslint',
         include: paths.appSrc
       }
     ],
@@ -113,7 +113,7 @@ module.exports = {
           /\.json$/,
           /\.svg$/
         ],
-        loader: 'url',
+        use: 'url',
         query: {
           limit: 10000,
           name: 'static/media/[name].[hash:8].[ext]'
@@ -123,7 +123,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
-        loader: 'babel',
+        use: 'babel',
 
       },
       // The notation here is somewhat confusing.
@@ -140,23 +140,25 @@ module.exports = {
       // in the main CSS file.
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract(
-          'style',
-          'css?importLoaders=1!postcss',
-          extractTextPluginOptions
-        )
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+              { loader: 'css-loader', options: { importLoaders: 1 } },
+              'postcss-loader'
+          ]
+        })
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
       {
         test: /\.json$/,
-        loader: 'json'
+        use: 'json'
       },
       // "file" loader for svg
       {
         test: /\.svg$/,
-        loader: 'file',
+        use: 'file',
         query: {
           name: 'static/media/[name].[hash:8].[ext]'
         }
